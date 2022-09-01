@@ -51,7 +51,7 @@ public class UserController {
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 
-		log.info("User name set wıth ", createUserRequest.getUsername());
+		log.info("User name set with ", createUserRequest.getUsername());
 
 		if(createUserRequest.getPassword().length() < 7 ||
 			!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
