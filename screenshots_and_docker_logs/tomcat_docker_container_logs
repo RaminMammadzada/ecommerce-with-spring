@@ -1,0 +1,301 @@
+[ec2-user@ip-172-31-27-117 ~]$ docker logs myTomcat9Server
+Using CATALINA_BASE:   /usr/local/tomcat
+Using CATALINA_HOME:   /usr/local/tomcat
+Using CATALINA_TMPDIR: /usr/local/tomcat/temp
+Using JRE_HOME:        /opt/java/openjdk
+Using CLASSPATH:       /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Sep-2022 22:18:07.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.65
+01-Sep-2022 22:18:07.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 14 2022 12:28:53 UTC
+01-Sep-2022 22:18:07.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.65.0
+01-Sep-2022 22:18:07.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Sep-2022 22:18:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.10.135-122.509.amzn2.x86_64
+01-Sep-2022 22:18:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Sep-2022 22:18:07.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+01-Sep-2022 22:18:07.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4.1+1
+01-Sep-2022 22:18:07.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+01-Sep-2022 22:18:07.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+01-Sep-2022 22:18:07.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+01-Sep-2022 22:18:07.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Sep-2022 22:18:07.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Sep-2022 22:18:07.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Sep-2022 22:18:07.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Sep-2022 22:18:07.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Sep-2022 22:18:07.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+01-Sep-2022 22:18:07.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Sep-2022 22:18:07.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Sep-2022 22:18:07.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Sep-2022 22:18:07.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+01-Sep-2022 22:18:07.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Sep-2022 22:18:07.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+01-Sep-2022 22:18:07.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+01-Sep-2022 22:18:07.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+01-Sep-2022 22:18:07.917 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+01-Sep-2022 22:18:07.917 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+01-Sep-2022 22:18:07.918 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01-Sep-2022 22:18:07.926 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.2 15 Mar 2022]
+01-Sep-2022 22:18:08.716 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:18:08.779 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1342] milliseconds
+01-Sep-2022 22:18:08.873 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Sep-2022 22:18:08.874 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.65]
+01-Sep-2022 22:18:08.896 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:18:08.933 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [153] milliseconds
+01-Sep-2022 22:19:18.909 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/docs]
+01-Sep-2022 22:19:19.540 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/docs] has finished in [630] ms
+01-Sep-2022 22:19:19.541 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/examples]
+01-Sep-2022 22:19:20.108 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/examples] has finished in [567] ms
+01-Sep-2022 22:19:20.109 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/host-manager]
+01-Sep-2022 22:19:20.173 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/host-manager] has finished in [64] ms
+01-Sep-2022 22:19:20.174 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+01-Sep-2022 22:19:20.228 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [54] ms
+01-Sep-2022 22:19:20.232 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/ROOT]
+01-Sep-2022 22:19:20.283 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/ROOT] has finished in [51] ms
+01-Sep-2022 22:20:50.302 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/usr/local/tomcat/conf/tomcat-users.xml]
+01-Sep-2022 22:21:30.319 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+01-Sep-2022 22:21:30.339 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+01-Sep-2022 22:21:30.391 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [52] ms
+01-Sep-2022 22:21:37.546 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Sep-2022 22:21:37.547 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:21:37.551 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+01-Sep-2022 22:21:37.599 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:21:37.614 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+Using CATALINA_BASE:   /usr/local/tomcat
+Using CATALINA_HOME:   /usr/local/tomcat
+Using CATALINA_TMPDIR: /usr/local/tomcat/temp
+Using JRE_HOME:        /opt/java/openjdk
+Using CLASSPATH:       /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Sep-2022 22:22:02.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.65
+01-Sep-2022 22:22:02.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 14 2022 12:28:53 UTC
+01-Sep-2022 22:22:02.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.65.0
+01-Sep-2022 22:22:02.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Sep-2022 22:22:02.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.10.135-122.509.amzn2.x86_64
+01-Sep-2022 22:22:02.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Sep-2022 22:22:02.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+01-Sep-2022 22:22:02.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4.1+1
+01-Sep-2022 22:22:02.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+01-Sep-2022 22:22:02.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+01-Sep-2022 22:22:02.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+01-Sep-2022 22:22:02.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+01-Sep-2022 22:22:02.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+01-Sep-2022 22:22:02.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+01-Sep-2022 22:22:02.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+01-Sep-2022 22:22:02.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+01-Sep-2022 22:22:02.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+01-Sep-2022 22:22:02.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Sep-2022 22:22:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Sep-2022 22:22:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Sep-2022 22:22:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+01-Sep-2022 22:22:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Sep-2022 22:22:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+01-Sep-2022 22:22:02.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+01-Sep-2022 22:22:02.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+01-Sep-2022 22:22:02.489 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+01-Sep-2022 22:22:02.489 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+01-Sep-2022 22:22:02.490 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01-Sep-2022 22:22:02.500 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.2 15 Mar 2022]
+01-Sep-2022 22:22:03.301 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:22:03.371 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1399] milliseconds
+01-Sep-2022 22:22:03.474 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Sep-2022 22:22:03.475 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.65]
+01-Sep-2022 22:22:03.491 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/docs]
+01-Sep-2022 22:22:04.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/docs] has finished in [594] ms
+01-Sep-2022 22:22:04.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/examples]
+01-Sep-2022 22:22:04.660 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/examples] has finished in [571] ms
+01-Sep-2022 22:22:04.664 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/host-manager]
+01-Sep-2022 22:22:04.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/host-manager] has finished in [62] ms
+01-Sep-2022 22:22:04.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+01-Sep-2022 22:22:04.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [49] ms
+01-Sep-2022 22:22:04.777 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/ROOT]
+01-Sep-2022 22:22:04.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/ROOT] has finished in [41] ms
+01-Sep-2022 22:22:04.825 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Sep-2022 22:22:04.873 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1501] milliseconds
+01-Sep-2022 22:23:16.500 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+01-Sep-2022 22:23:20.732 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 22:23:20.876 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [4,376] ms
+01-Sep-2022 22:24:24.613 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] has started
+01-Sep-2022 22:24:28.201 INFO [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 22:24:28.302 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] is completed
+01-Sep-2022 22:32:56.627 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myEcommerceApp]
+01-Sep-2022 22:32:56.902 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+01-Sep-2022 22:33:00.403 INFO [http-nio-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 22:33:00.504 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [3,597] ms
+01-Sep-2022 22:53:26.289 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myEcommerceApp]
+01-Sep-2022 22:53:26.495 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+01-Sep-2022 22:53:28.759 INFO [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 22:53:28.845 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [2,349] ms
+01-Sep-2022 22:53:53.144 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] has started
+01-Sep-2022 22:53:55.277 INFO [http-nio-8080-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 22:53:55.365 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] is completed
+01-Sep-2022 23:13:58.098 INFO [http-nio-8080-exec-39] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myEcommerceApp]
+01-Sep-2022 23:13:58.249 INFO [http-nio-8080-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+01-Sep-2022 23:14:00.403 INFO [http-nio-8080-exec-39] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 23:14:00.488 INFO [http-nio-8080-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [2,239] ms
+01-Sep-2022 23:14:25.788 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] has started
+01-Sep-2022 23:14:27.561 INFO [http-nio-8080-exec-43] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Sep-2022 23:14:27.643 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] is completed
+01-Sep-2022 23:18:01.970 INFO [http-nio-8080-exec-49] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myEcommerceApp]
+01-Sep-2022 23:18:02.132 INFO [http-nio-8080-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+01-Sep-2022 23:18:03.986 INFO [http-nio-8080-exec-55] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2022-09-01 23:18:05.201  INFO 1 --- [io-8080-exec-55] com.example.demo.EcommerceApplication    : Starting EcommerceApplication v0.0.1-SNAPSHOT on de6832e4b758 with PID 1 (/usr/local/tomcat/webapps/myEcommerceApp/WEB-INF/classes started by root in /usr/local/tomcat)
+2022-09-01 23:18:05.213  INFO 1 --- [io-8080-exec-55] com.example.demo.EcommerceApplication    : No active profile set, falling back to default profiles: default
+2022-09-01 23:18:06.691  INFO 1 --- [io-8080-exec-55] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-09-01 23:18:06.860  INFO 1 --- [io-8080-exec-55] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 4 repository interfaces.
+2022-09-01 23:18:08.272  INFO 1 --- [io-8080-exec-55] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9a3f45c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-01 23:18:08.428  INFO 1 --- [io-8080-exec-55] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3135 ms
+2022-09-01 23:18:09.183  INFO 1 --- [io-8080-exec-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-01 23:18:09.452  INFO 1 --- [io-8080-exec-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-01 23:18:09.578  INFO 1 --- [io-8080-exec-55] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-09-01 23:18:09.686  INFO 1 --- [io-8080-exec-55] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-09-01 23:18:09.688  INFO 1 --- [io-8080-exec-55] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-09-01 23:18:09.956  INFO 1 --- [io-8080-exec-55] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-09-01 23:18:10.259  INFO 1 --- [io-8080-exec-55] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 23:18:12.145  INFO 1 --- [io-8080-exec-55] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 23:18:13.689  WARN 1 --- [io-8080-exec-55] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 23:18:13.894  INFO 1 --- [io-8080-exec-55] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79294852, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c97ffe4, org.springframework.security.web.header.HeaderWriterFilter@37750c31, org.springframework.web.filter.CorsFilter@4adf5b28, org.springframework.security.web.authentication.logout.LogoutFilter@5a1bd021, com.example.demo.security.JWTAuthenticationFilter@159d225a, com.example.demo.security.JWTAuthenticationVerficationFilter@3af98c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78a72dab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@418e9e68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9212853, org.springframework.security.web.session.SessionManagementFilter@7581db5d, org.springframework.security.web.access.ExceptionTranslationFilter@620605de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66b0ce2d]
+2022-09-01 23:18:14.316  INFO 1 --- [io-8080-exec-55] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-01 23:18:14.746  INFO 1 --- [io-8080-exec-55] com.example.demo.EcommerceApplication    : Started EcommerceApplication in 10.421 seconds (JVM running for 3373.19)
+01-Sep-2022 23:18:14.765 INFO [http-nio-8080-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [12,626] ms
+01-Sep-2022 23:18:31.931 INFO [http-nio-8080-exec-51] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] has started
+2022-09-01 23:18:31.936  INFO 1 --- [io-8080-exec-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-01 23:18:31.945  INFO 1 --- [io-8080-exec-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 23:18:31.957  INFO 1 --- [io-8080-exec-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-01 23:18:31.967  INFO 1 --- [io-8080-exec-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+01-Sep-2022 23:18:31.981 WARNING [http-nio-8080-exec-51] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [myEcommerceApp] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+01-Sep-2022 23:18:34.308 INFO [http-nio-8080-exec-51] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2022-09-01 23:18:35.293  INFO 1 --- [io-8080-exec-51] com.example.demo.EcommerceApplication    : Starting EcommerceApplication v0.0.1-SNAPSHOT on de6832e4b758 with PID 1 (/usr/local/tomcat/webapps/myEcommerceApp/WEB-INF/classes started by root in /usr/local/tomcat)
+2022-09-01 23:18:35.297  INFO 1 --- [io-8080-exec-51] com.example.demo.EcommerceApplication    : No active profile set, falling back to default profiles: default
+2022-09-01 23:18:36.516  INFO 1 --- [io-8080-exec-51] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-09-01 23:18:36.633  INFO 1 --- [io-8080-exec-51] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 4 repository interfaces.
+2022-09-01 23:18:37.775  INFO 1 --- [io-8080-exec-51] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6abf065] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-01 23:18:37.855  INFO 1 --- [io-8080-exec-51] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2490 ms
+2022-09-01 23:18:38.449  INFO 1 --- [io-8080-exec-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-01 23:18:38.640  INFO 1 --- [io-8080-exec-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-01 23:18:38.732  INFO 1 --- [io-8080-exec-51] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-09-01 23:18:38.822  INFO 1 --- [io-8080-exec-51] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-09-01 23:18:38.824  INFO 1 --- [io-8080-exec-51] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-09-01 23:18:39.088  INFO 1 --- [io-8080-exec-51] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-09-01 23:18:39.306  INFO 1 --- [io-8080-exec-51] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 23:18:40.766  INFO 1 --- [io-8080-exec-51] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 23:18:42.098  WARN 1 --- [io-8080-exec-51] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 23:18:42.277  INFO 1 --- [io-8080-exec-51] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cafa45f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ec112b8, org.springframework.security.web.header.HeaderWriterFilter@428cc13c, org.springframework.web.filter.CorsFilter@13718a58, org.springframework.security.web.authentication.logout.LogoutFilter@2e481de, com.example.demo.security.JWTAuthenticationFilter@3a91866a, com.example.demo.security.JWTAuthenticationVerficationFilter@72c2b9d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3af7878, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b7b3cc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@330e768e, org.springframework.security.web.session.SessionManagementFilter@498a88a9, org.springframework.security.web.access.ExceptionTranslationFilter@4182fdbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55bb74db]
+2022-09-01 23:18:42.650  INFO 1 --- [io-8080-exec-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-01 23:18:43.002  INFO 1 --- [io-8080-exec-51] com.example.demo.EcommerceApplication    : Started EcommerceApplication in 8.454 seconds (JVM running for 3401.446)
+01-Sep-2022 23:18:43.020 INFO [http-nio-8080-exec-51] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] is completed
+01-Sep-2022 23:18:45.172 INFO [http-nio-8080-exec-54] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] has started
+2022-09-01 23:18:45.176  INFO 1 --- [io-8080-exec-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-01 23:18:45.183  INFO 1 --- [io-8080-exec-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 23:18:45.196  INFO 1 --- [io-8080-exec-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-01 23:18:45.199  INFO 1 --- [io-8080-exec-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+01-Sep-2022 23:18:45.209 WARNING [http-nio-8080-exec-54] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [myEcommerceApp] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+01-Sep-2022 23:18:47.065 INFO [http-nio-8080-exec-54] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2022-09-01 23:18:47.974  INFO 1 --- [io-8080-exec-54] com.example.demo.EcommerceApplication    : Starting EcommerceApplication v0.0.1-SNAPSHOT on de6832e4b758 with PID 1 (/usr/local/tomcat/webapps/myEcommerceApp/WEB-INF/classes started by root in /usr/local/tomcat)
+2022-09-01 23:18:47.989  INFO 1 --- [io-8080-exec-54] com.example.demo.EcommerceApplication    : No active profile set, falling back to default profiles: default
+2022-09-01 23:18:49.154  INFO 1 --- [io-8080-exec-54] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-09-01 23:18:49.264  INFO 1 --- [io-8080-exec-54] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101ms. Found 4 repository interfaces.
+2022-09-01 23:18:50.413  INFO 1 --- [io-8080-exec-54] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee226255] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-01 23:18:50.484  INFO 1 --- [io-8080-exec-54] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2443 ms
+2022-09-01 23:18:51.061  INFO 1 --- [io-8080-exec-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-09-01 23:18:51.355  INFO 1 --- [io-8080-exec-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-09-01 23:18:51.429  INFO 1 --- [io-8080-exec-54] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-09-01 23:18:51.513  INFO 1 --- [io-8080-exec-54] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-09-01 23:18:51.514  INFO 1 --- [io-8080-exec-54] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-09-01 23:18:51.674  INFO 1 --- [io-8080-exec-54] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-09-01 23:18:51.823  INFO 1 --- [io-8080-exec-54] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-01 23:18:52.964  INFO 1 --- [io-8080-exec-54] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-01 23:18:54.282  WARN 1 --- [io-8080-exec-54] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-01 23:18:54.462  INFO 1 --- [io-8080-exec-54] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75f6a49f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c03d549, org.springframework.security.web.header.HeaderWriterFilter@616d74da, org.springframework.web.filter.CorsFilter@5cb8f364, org.springframework.security.web.authentication.logout.LogoutFilter@17861307, com.example.demo.security.JWTAuthenticationFilter@7394915b, com.example.demo.security.JWTAuthenticationVerficationFilter@44551f4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@509286fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e677618, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4479904, org.springframework.security.web.session.SessionManagementFilter@a68dd04, org.springframework.security.web.access.ExceptionTranslationFilter@58532fb6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@334e0f96]
+2022-09-01 23:18:54.818  INFO 1 --- [io-8080-exec-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-01 23:18:55.178  INFO 1 --- [io-8080-exec-54] com.example.demo.EcommerceApplication    : Started EcommerceApplication in 7.868 seconds (JVM running for 3413.623)
+01-Sep-2022 23:18:55.193 INFO [http-nio-8080-exec-54] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/myEcommerceApp] is completed
+2022-09-01 23:18:58.994  INFO 1 --- [io-8080-exec-63] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-01 23:18:59.030  INFO 1 --- [io-8080-exec-63] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2022-09-01 23:19:20.288  INFO 1 --- [io-8080-exec-61] c.e.demo.controllers.UserController      : User name set with 
+2022-09-01 23:19:36.516  INFO 1 --- [io-8080-exec-59] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+02-Sep-2022 05:34:45.967 INFO [http-nio-8080-exec-64] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xca0x010x000x000xc60x030x031R0x990x99V0xe10xa20xe10xcb0x9f0xa90xae0x1a0xbdg0xd1Z0x1b&%0x9e0xc90xa6!S0x81>0xa00x1bi0x130xde0x000x00h0xcc0x140xcc0x130xc0/0xc0+0xc000xc0,0xc00x110xc00x070xc0'0xc0#0xc00x130xc00x090xc0(0xc0$0xc00x140xc00x0a0xcc0x150x000x9e0x000x9f0x00g0x00k0x0030x0090x000x9c0x000x9d0x000x050x000x040x00<0x00=0x00/0x0050xc00x120x000x160x000x0a0x000x030x000x080x000x060x000x140x000x110x000x190x000x170x0020xc00x080x000x120x000x130x000x150x0080x00@0x00f0x00j0x000xa20x000xa30x010x000x0050x000x050x000x050x010x000x000x000x000x000x0a0x000x080x000x060x000x170x000x180x000x190x000x0b0x000x020x010x000x000x0d0x000x0c0x000x0a0x040x010x040x030x020x010x020x030x020x020xff0x010x000x010x000x000x0f0x000x010x01...]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-02 16:00:29.295  INFO 1 --- [io-8080-exec-73] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-02 16:00:29.308  INFO 1 --- [io-8080-exec-73] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-02 16:00:29.327  INFO 1 --- [io-8080-exec-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-09-02 16:00:29.342  INFO 1 --- [io-8080-exec-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+02-Sep-2022 16:00:29.354 WARNING [http-nio-8080-exec-73] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [myEcommerceApp] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+02-Sep-2022 16:00:29.882 INFO [http-nio-8080-exec-73] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myEcommerceApp]
+02-Sep-2022 16:00:30.142 INFO [http-nio-8080-exec-68] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war]
+02-Sep-2022 16:00:32.987 INFO [http-nio-8080-exec-68] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2022-09-02 16:00:33.788  INFO 1 --- [io-8080-exec-68] com.example.demo.EcommerceApplication    : Starting EcommerceApplication v0.0.1-SNAPSHOT on de6832e4b758 with PID 1 (/usr/local/tomcat/webapps/myEcommerceApp/WEB-INF/classes started by root in /usr/local/tomcat)
+2022-09-02 16:00:33.791  INFO 1 --- [io-8080-exec-68] com.example.demo.EcommerceApplication    : No active profile set, falling back to default profiles: default
+2022-09-02 16:00:34.873  INFO 1 --- [io-8080-exec-68] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-09-02 16:00:35.011  INFO 1 --- [io-8080-exec-68] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 4 repository interfaces.
+2022-09-02 16:00:36.241  INFO 1 --- [io-8080-exec-68] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9d340ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-02 16:00:36.319  INFO 1 --- [io-8080-exec-68] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2477 ms
+2022-09-02 16:00:36.930  INFO 1 --- [io-8080-exec-68] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-09-02 16:00:37.079  INFO 1 --- [io-8080-exec-68] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-09-02 16:00:37.131  INFO 1 --- [io-8080-exec-68] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-09-02 16:00:37.218  INFO 1 --- [io-8080-exec-68] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-09-02 16:00:37.219  INFO 1 --- [io-8080-exec-68] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-09-02 16:00:37.379  INFO 1 --- [io-8080-exec-68] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-09-02 16:00:37.530  INFO 1 --- [io-8080-exec-68] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-09-02 16:00:38.732  INFO 1 --- [io-8080-exec-68] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-02 16:00:40.147  WARN 1 --- [io-8080-exec-68] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-02 16:00:40.357  INFO 1 --- [io-8080-exec-68] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b11bd51, org.springframework.security.web.context.SecurityContextPersistenceFilter@24fd6ebb, org.springframework.security.web.header.HeaderWriterFilter@29406736, org.springframework.web.filter.CorsFilter@a1b34da, org.springframework.security.web.authentication.logout.LogoutFilter@7aac1ec9, com.example.demo.security.JWTAuthenticationFilter@7a7fa04, com.example.demo.security.JWTAuthenticationVerficationFilter@2be3fb6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5473cf2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24255c62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dfe2076, org.springframework.security.web.session.SessionManagementFilter@7f116c88, org.springframework.security.web.access.ExceptionTranslationFilter@6a87dae0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@525ad8b7]
+2022-09-02 16:00:40.720  INFO 1 --- [io-8080-exec-68] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-02 16:00:41.117  INFO 1 --- [io-8080-exec-68] com.example.demo.EcommerceApplication    : Started EcommerceApplication in 7.941 seconds (JVM running for 63519.562)
+02-Sep-2022 16:00:41.140 INFO [http-nio-8080-exec-68] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/myEcommerceApp.war] has finished in [10,992] ms
+[ec2-user@ip-172-31-27-117 ~]$ 

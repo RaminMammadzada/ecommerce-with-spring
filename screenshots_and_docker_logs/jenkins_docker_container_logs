@@ -1,0 +1,176 @@
+[ec2-user@ip-172-31-27-117 ~]$ docker logs myContainer
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2022-09-01 17:13:29.476+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @1213ms to org.eclipse.jetty.util.log.JavaUtilLog
+2022-09-01 17:13:29.689+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2022-09-01 17:13:29.771+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2022-09-01 17:13:29.942+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 11.0.16.1+1
+2022-09-01 17:13:30.849+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2022-09-01 17:13:30.955+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2022-09-01 17:13:30.955+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2022-09-01 17:13:30.956+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 660000ms
+2022-09-01 17:13:32.248+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2022-09-01 17:13:33.093+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@18151a14{Jenkins v2.346.3,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2022-09-01 17:13:33.164+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@1165b38{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-09-01 17:13:33.164+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @4905ms
+2022-09-01 17:13:33.174+0000 [id=23]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2022-09-01 17:13:33.771+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2022-09-01 17:13:35.032+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2022-09-01 17:13:44.590+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2022-09-01 17:13:44.809+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/var/jenkins_home/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-01 17:13:46.606+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2022-09-01 17:13:46.904+0000 [id=28]	INFO	h.p.b.g.GlobalTimeOutConfiguration#load: global timeout not set
+2022-09-01 17:13:47.770+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2022-09-01 17:13:47.771+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2022-09-01 17:13:47.896+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2022-09-01 17:13:47.952+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2022-09-01 17:13:48.134+0000 [id=44]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Download metadata
+2022-09-01 17:13:48.141+0000 [id=44]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Download metadata. 3 ms
+2022-09-01 17:13:48.205+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2022-09-01 17:13:48.402+0000 [id=22]	INFO	hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2022-09-01 17:20:52.777+0000 [id=111]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 17:20:52.780+0000 [id=111]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-01 18:20:52.777+0000 [id=480]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 18:20:52.780+0000 [id=480]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-01 19:20:52.777+0000 [id=488]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 19:20:52.779+0000 [id=488]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-01 19:38:19.857+0000 [id=24]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2022-09-01 19:53:51.432+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @1260ms to org.eclipse.jetty.util.log.JavaUtilLog
+2022-09-01 19:53:51.638+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2022-09-01 19:53:51.718+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2022-09-01 19:53:51.874+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 11.0.16.1+1
+2022-09-01 19:53:52.823+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2022-09-01 19:53:52.929+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2022-09-01 19:53:52.930+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2022-09-01 19:53:52.931+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2022-09-01 19:53:54.182+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2022-09-01 19:53:54.732+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@2f6bbeb0{Jenkins v2.346.3,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2022-09-01 19:53:54.804+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@1165b38{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-09-01 19:53:54.805+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @4635ms
+2022-09-01 19:53:54.806+0000 [id=23]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2022-09-01 19:53:55.412+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2022-09-01 19:53:56.752+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2022-09-01 19:54:07.872+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2022-09-01 19:54:08.194+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/var/jenkins_home/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-01 19:54:12.815+0000 [id=29]	INFO	h.p.b.g.GlobalTimeOutConfiguration#load: global timeout not set
+2022-09-01 19:54:14.023+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2022-09-01 19:54:14.895+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2022-09-01 19:54:14.896+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2022-09-01 19:54:15.034+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2022-09-01 19:54:15.045+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2022-09-01 19:54:15.345+0000 [id=44]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Download metadata
+2022-09-01 19:54:15.361+0000 [id=44]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Download metadata. 13 ms
+2022-09-01 19:54:15.768+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2022-09-01 19:54:16.304+0000 [id=22]	INFO	hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2022-09-01 20:02:53.352+0000 [id=65]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 20:02:53.357+0000 [id=65]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 3 ms
+2022-09-01 20:29:36.653+0000 [id=18]	INFO	hudson.PluginManager#install: Starting installation of a batch of 0 plugins plus their dependencies
+2022-09-01 20:30:08.993+0000 [id=17]	WARNING	hudson.model.UpdateSite$Plugin#getNeededDependencies: Could not find dependency kubernetes-cd of azure-acs
+2022-09-01 20:30:11.795+0000 [id=18]	INFO	hudson.PluginManager#install: Starting installation of a batch of 0 plugins plus their dependencies
+2022-09-01 20:30:12.457+0000 [id=66]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2022-09-01 20:30:12.802+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2022-09-01 20:30:12.803+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2022-09-01 20:30:12.803+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2022-09-01 20:30:12.804+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2022-09-01 20:30:12.806+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2022-09-01 20:30:12.806+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2022-09-01 20:30:12.806+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2022-09-01 20:30:12.807+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2022-09-01 20:30:12.807+0000 [id=71]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2022-09-01 20:30:12.807+0000 [id=70]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2022-09-01 20:30:12.808+0000 [id=66]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 0 plugins in 1 sec
+2022-09-01 20:31:04.124+0000 [id=17]	INFO	hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+2022-09-01 20:31:04.127+0000 [id=72]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of deploy on behalf of remki
+2022-09-01 20:31:04.133+0000 [id=72]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading deploy
+2022-09-01 20:31:06.802+0000 [id=72]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: deploy
+2022-09-01 20:31:06.803+0000 [id=72]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2022-09-01 20:31:07.272+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2022-09-01 20:31:07.273+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2022-09-01 20:31:07.273+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2022-09-01 20:31:07.273+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2022-09-01 20:31:07.274+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2022-09-01 20:31:07.274+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2022-09-01 20:31:07.274+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2022-09-01 20:31:07.274+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2022-09-01 20:31:07.275+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2022-09-01 20:31:07.275+0000 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2022-09-01 20:31:07.275+0000 [id=72]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 1 plugins in 3.1 sec
+2022-09-01 20:32:52.730+0000 [id=15]	INFO	hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+2022-09-01 20:32:52.732+0000 [id=15]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of javadoc for plugin maven-plugin
+2022-09-01 20:32:52.733+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of javadoc on behalf of remki
+2022-09-01 20:32:52.734+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading javadoc
+2022-09-01 20:32:53.001+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: javadoc
+2022-09-01 20:32:53.001+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of maven-plugin on behalf of remki
+2022-09-01 20:32:53.002+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading maven-plugin
+2022-09-01 20:32:58.527+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: maven-plugin
+2022-09-01 20:32:58.527+0000 [id=79]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2022-09-01 20:32:59.008+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2022-09-01 20:32:59.009+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2022-09-01 20:32:59.009+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2022-09-01 20:32:59.009+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2022-09-01 20:32:59.010+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2022-09-01 20:32:59.011+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2022-09-01 20:32:59.011+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2022-09-01 20:32:59.011+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2022-09-01 20:32:59.012+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2022-09-01 20:32:59.012+0000 [id=87]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2022-09-01 20:32:59.012+0000 [id=79]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 2 plugins in 6.2 sec
+2022-09-01 21:02:53.352+0000 [id=326]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 21:02:53.356+0000 [id=326]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-01 22:02:53.352+0000 [id=464]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 22:02:53.354+0000 [id=464]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-01 23:02:53.352+0000 [id=642]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-01 23:02:53.354+0000 [id=642]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-01 23:11:14.122+0000 [id=660]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Workspace clean-up
+2022-09-01 23:11:14.125+0000 [id=660]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Workspace clean-up. 2 ms
+2022-09-01 23:36:20.044+0000 [id=740]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started jobAnalytics
+2022-09-01 23:36:20.044+0000 [id=740]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished jobAnalytics. 0 ms
+2022-09-02 00:02:53.352+0000 [id=748]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 00:02:53.354+0000 [id=748]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-02 01:02:53.352+0000 [id=756]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 01:02:53.353+0000 [id=756]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 02:02:53.352+0000 [id=764]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 02:02:53.354+0000 [id=764]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-02 03:02:53.352+0000 [id=772]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 03:02:53.355+0000 [id=772]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 2 ms
+2022-09-02 04:02:53.352+0000 [id=780]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 04:02:53.355+0000 [id=780]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 05:02:53.352+0000 [id=788]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 05:02:53.358+0000 [id=788]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-02 06:02:53.352+0000 [id=796]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 06:02:53.353+0000 [id=796]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 07:02:53.352+0000 [id=804]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 07:02:53.353+0000 [id=804]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 07:25:17.348+0000 [id=805]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started LibraryCachingCleanup
+2022-09-02 07:25:17.351+0000 [id=805]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished LibraryCachingCleanup. 2 ms
+2022-09-02 07:43:57.745+0000 [id=806]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started telemetry collection
+2022-09-02 07:43:57.753+0000 [id=806]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished telemetry collection. 6 ms
+2022-09-02 08:02:53.352+0000 [id=814]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 08:02:53.353+0000 [id=814]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 09:02:53.352+0000 [id=822]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 09:02:53.360+0000 [id=822]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 7 ms
+2022-09-02 10:02:53.352+0000 [id=830]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 10:02:53.362+0000 [id=830]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-02 11:02:53.352+0000 [id=838]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 11:02:53.354+0000 [id=838]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 1 ms
+2022-09-02 12:02:53.352+0000 [id=846]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 12:02:53.353+0000 [id=846]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 13:02:53.352+0000 [id=854]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 13:02:53.353+0000 [id=854]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 14:02:53.352+0000 [id=862]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 14:02:53.353+0000 [id=862]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+2022-09-02 15:02:53.352+0000 [id=870]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Started Periodic background build discarder
+2022-09-02 15:02:53.353+0000 [id=870]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Periodic background build discarder. 0 ms
+[ec2-user@ip-172-31-27-117 ~]$ 
