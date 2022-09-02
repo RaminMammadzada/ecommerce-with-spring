@@ -53,7 +53,7 @@ public class CartControllerTest {
         mcr.setUsername("Ramin");
         mcr.setItemId(1L);
         mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.addTocart(mcr);
+        final ResponseEntity<Cart> response = cartController.addToCart(mcr);
 
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
@@ -66,7 +66,7 @@ public class CartControllerTest {
         mcr.setUsername("Ramin");
         mcr.setItemId(2L);
         mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.addTocart(mcr);
+        final ResponseEntity<Cart> response = cartController.addToCart(mcr);
 
         assertNotNull(response);
         assertEquals(404, response.getStatusCodeValue());
@@ -78,7 +78,7 @@ public class CartControllerTest {
         mcr.setUsername("Ramin");
         mcr.setItemId(1L);
         mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
+        final ResponseEntity<Cart> response = cartController.removeFromCart(mcr);
 
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
@@ -91,7 +91,7 @@ public class CartControllerTest {
         mcr.setUsername("Ramin");
         mcr.setItemId(2L);
         mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
+        final ResponseEntity<Cart> response = cartController.removeFromCart(mcr);
 
         assertNotNull(response);
         assertEquals(404, response.getStatusCodeValue());
@@ -103,7 +103,7 @@ public class CartControllerTest {
         mcr.setUsername("Sara");
         mcr.setItemId(1L);
         mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
+        final ResponseEntity<Cart> response = cartController.removeFromCart(mcr);
 
         assertNotNull(response);
         assertEquals(404, response.getStatusCodeValue());
