@@ -1,24 +1,17 @@
 package com.example.demo.controllers;
 
 import com.example.demo.TestUtils;
-import com.example.demo.model.persistence.Cart;
 import com.example.demo.model.persistence.Item;
-import com.example.demo.model.persistence.User;
-import com.example.demo.model.persistence.UserOrder;
-import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.ItemRepository;
-import com.example.demo.model.persistence.repositories.UserRepository;
-import com.example.demo.model.requests.CreateUserRequest;
-import com.example.demo.model.requests.ModifyCartRequest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
@@ -29,113 +22,73 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
-public class CartControllerTest {
-    private CartController cartController;
-    private UserRepository userRepository = mock(UserRepository.class);
-    private CartRepository cartRepository = mock(CartRepository.class);
+public class ItemControllerTest {
+    private ItemController itemController;
+
     private ItemRepository itemRepository = mock(ItemRepository.class);
 
     @Before
     public void setUp() {
-        cartController = new CartController();
-        TestUtils.injectObjects(cartController, "userRepository", userRepository);
-        TestUtils.injectObjects(cartController, "cartRepository", cartRepository);
-        TestUtils.injectObjects(cartController, "itemRepository", itemRepository);
-
-        when(userRepository.findByUsername(eq("Ramin"))).thenReturn(createUser());
-        when(itemRepository.findById(eq(1L))).thenReturn(Optional.of(createItem()));
-        when(cartRepository.save(any())).thenReturn(createCart());
+        itemController = new ItemController();
+        TestUtils.injectObjects(itemController, "itemRepository", itemRepository);
+//        when(cartRepository.save(any())).thenReturn(createCart());
     }
 
     @Test
-    public void add_to_cart_returns_ok_with_items_data() {
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("Ramin");
-        mcr.setItemId(1L);
-        mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.addTocart(mcr);
+    public void get_items() {
+        when(itemRepository.findAll()).thenReturn(createItems());
 
-        assertNotNull(response);
+        final ResponseEntity<List<Item>> response = itemController.getItems();
+
+        assertNotNull(true);
         assertEquals(200, response.getStatusCodeValue());
-        assertEquals(2, response.getBody().getItems().size());
+        assertEquals(5, response.getBody().size());
     }
 
     @Test
-    public void add_to_cart_return_not_found_when_item_not_exists() {
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("Ramin");
-        mcr.setItemId(2L);
-        mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.addTocart(mcr);
+    public void get_item_by_id() {
+        BigDecimal itemPrice = BigDecimal.valueOf(191.131);
+        when(itemRepository.findById(eq(3L))).thenReturn(Optional.of(createOneItem(itemPrice)));
 
-        assertNotNull(response);
-        assertEquals(404, response.getStatusCodeValue());
-    }
+        final ResponseEntity<Item> response = itemController.getItemById(3L);
 
-    @Test
-    public void remove_from_cart_returns_ok_without_removed_items_data() {
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("Ramin");
-        mcr.setItemId(1L);
-        mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
-
-        assertNotNull(response);
+        assertNotNull(true);
         assertEquals(200, response.getStatusCodeValue());
-        assertEquals(0, response.getBody().getItems().size());
+        assertEquals(itemPrice, response.getBody().getPrice());
     }
 
     @Test
-    public void remove_from_cart_return_not_found_when_item_not_exists() {
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("Ramin");
-        mcr.setItemId(2L);
-        mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
+    public void get_items_by_name() {
+        List<Item> itemsToReturn = createItems();
+        when(itemRepository.findByName("sample item name 1")).thenReturn(itemsToReturn);
 
-        assertNotNull(response);
-        assertEquals(404, response.getStatusCodeValue());
+        final ResponseEntity<List<Item>> response = itemController.getItemsByName("sample item name 1");
+
+        assertNotNull(true);
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(5, response.getBody().size());
+        assertEquals(itemsToReturn.get(4), response.getBody().get(4));
     }
 
-    @Test
-    public void remove_from_cart_return_not_found_when_username_not_exists() {
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("Sara");
-        mcr.setItemId(1L);
-        mcr.setQuantity(1);
-        final ResponseEntity<Cart> response = cartController.removeFromcart(mcr);
+    public static List<Item> createItems() {
+        List<Item> items = new ArrayList<>();
 
-        assertNotNull(response);
-        assertEquals(404, response.getStatusCodeValue());
+        for (Long i = 1L; i <= 5; i++) {
+            Item item = new Item();
+            item.setId(i);
+            item.setDescription("Test item " + i);
+            item.setPrice(BigDecimal.valueOf(131.113 + (i * 3.5)));
+            items.add(item);
+        }
+        return items;
     }
 
-    public static User createUser() {
-        User user = new User();
-        user.setId(1L);
-        user.setUsername("Ramin");
-        user.setPassword("abcdefg");
-
-        user.setCart(createCart());
-        return user;
-    }
-
-    public static Cart createCart() {
-        Cart cart = new Cart();
-        cart.setId(1L);
-        cart.addItem(createItem());
-        return cart;
-    }
-
-    public static Item createItem() {
+    public static Item createOneItem(BigDecimal price) {
         Item item = new Item();
         item.setId(1L);
         item.setDescription("Test item 1");
-        item.setPrice(BigDecimal.valueOf(131.113));
+        item.setPrice(price);
         return item;
-    }
-
-    public static UserOrder createOrder() {
-        return UserOrder.createFromCart(createCart());
     }
 
 }
