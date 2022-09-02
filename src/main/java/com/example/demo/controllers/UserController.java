@@ -43,19 +43,29 @@ public class UserController {
 	@GetMapping("/{username}")
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
 		User user = userRepository.findByUsername(username);
-		return user == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(user);
+		if (user == null) {
+			log.info("metricClass=FindByUserName metric=Failure inputDataKey=username inputDataValue={} errorMessage=notExists", username);
+			return ResponseEntity.notFound().build();
+		} else {
+			log.info("metricClass=FindByUserName metric=Success inputDataKey=username inputDataValue={}", username);
+			return ResponseEntity.ok(user);
+		}
 	}
 	
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
+		if (userRepository.findByUsername(createUserRequest.getUsername()) != null) {
+			log.info("metricClass=CreateUser metric=Failure inputDataKey=username inputDataValue={} errorMessage=duplication", createUserRequest.getUsername() );
+			return ResponseEntity.badRequest().build();
+		}
+
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 
-		log.info("User name set with ", createUserRequest.getUsername());
-
 		if(createUserRequest.getPassword().length() < 7 ||
 			!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			log.error("Error with user password. Cannot create user {}", createUserRequest.getUsername());
+			log.info("metricClass=CreateUser metric=Failure inputDataKey=username inputDataValue={} errorMessage=validation", createUserRequest.getUsername());
+
 			return ResponseEntity.badRequest().build();
 		}
 
@@ -66,6 +76,7 @@ public class UserController {
 		user.setCart(cart);
 
 		userRepository.save(user);
+		log.info("metricClass=CreateUser metric=Success inputDataKey=username inputDataValue={}", createUserRequest.getUsername());
 		return ResponseEntity.ok(user);
 	}
 	

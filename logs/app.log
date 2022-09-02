@@ -1,0 +1,40 @@
+2022-09-02 18:13:04,176 INFO c.e.d.EcommerceApplication [main] Starting EcommerceApplication on Ramins-MBP with PID 62353 (/Users/derem/cloud/jwd_nd_udacity/e-commerce/target/classes started by derem in /Users/derem/cloud/jwd_nd_udacity/e-commerce)
+2022-09-02 18:13:04,178 DEBUG c.e.d.EcommerceApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-09-02 18:13:04,179 INFO c.e.d.EcommerceApplication [main] No active profile set, falling back to default profiles: default
+2022-09-02 18:13:05,425 DEBUG c.e.d.s.JWTAuthenticationVerficationFilter [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2022-09-02 18:13:05,654 INFO c.e.d.EcommerceApplication [main] Started EcommerceApplication in 1.588 seconds (JVM running for 1.875)
+2022-09-02 18:13:23,756 INFO c.e.d.c.UserController [http-nio-8080-exec-1] metricClass=CreateUser metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:13:39,342 INFO c.e.d.c.UserController [http-nio-8080-exec-3] metricClass=CreateUser metric=Failure inputDataKey=username inputDataValue=Sara errorMessage=duplication
+2022-09-02 18:14:02,444 INFO c.e.d.c.ItemController [http-nio-8080-exec-5] metricClass=getItemById metric=Failure inputDataKey=itemId inputDataValue=112 errorMessage=notExists
+2022-09-02 18:14:46,718 DEBUG c.e.d.s.JWTAuthenticationFilter [http-nio-8080-exec-6] Request is to process authentication
+2022-09-02 18:14:58,321 INFO c.e.d.c.CartController [http-nio-8080-exec-7] metricClass=AddItemToCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:15:09,167 INFO c.e.d.c.CartController [http-nio-8080-exec-8] metricClass=RemoveItemFromCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:15:45,500 INFO c.e.d.c.OrderController [http-nio-8080-exec-9] metricClass=SubmitOrder metric=Failure inputDataKey=username inputDataValue=Ramin errorMessage=notExists
+2022-09-02 18:16:00,269 INFO c.e.d.c.OrderController [http-nio-8080-exec-10] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:16:20,357 INFO c.e.d.c.OrderController [http-nio-8080-exec-2] metricClass=GetOrdersOfUserWithUsername metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:16:29,235 INFO c.e.d.c.ItemController [http-nio-8080-exec-1] metricClass=getItemById metric=Success inputDataKey=itemId inputDataValue=1
+2022-09-02 18:16:39,234 INFO c.e.d.c.ItemController [http-nio-8080-exec-3] metricClass=getItemById metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:16:43,792 INFO c.e.d.c.ItemController [http-nio-8080-exec-4] metricClass=getItemById metric=Failure inputDataKey=itemId inputDataValue=167 errorMessage=notExists
+2022-09-02 18:17:00,633 INFO c.e.d.c.UserController [http-nio-8080-exec-5] metricClass=FindByUserName metric=Failure inputDataKey=username inputDataValue=Ramin errorMessage=notExists
+2022-09-02 18:17:13,576 INFO c.e.d.c.UserController [http-nio-8080-exec-6] metricClass=FindByUserName metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:18:05,795 INFO c.e.d.c.UserController [http-nio-8080-exec-7] metricClass=FindByUserName metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:19:11,833 INFO c.e.d.c.UserController [http-nio-8080-exec-10] metricClass=CreateUser metric=Success inputDataKey=username inputDataValue=Muge
+2022-09-02 18:19:23,017 DEBUG c.e.d.s.JWTAuthenticationFilter [http-nio-8080-exec-2] Request is to process authentication
+2022-09-02 18:19:43,783 DEBUG c.e.d.s.JWTAuthenticationFilter [http-nio-8080-exec-3] Request is to process authentication
+2022-09-02 18:20:15,564 INFO c.e.d.c.CartController [http-nio-8080-exec-4] metricClass=AddItemToCart metric=Failure inputDataKey=itemId inputDataValue=3 errorMessage=notExists
+2022-09-02 18:20:21,592 INFO c.e.d.c.CartController [http-nio-8080-exec-5] metricClass=AddItemToCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:20:37,261 INFO c.e.d.c.OrderController [http-nio-8080-exec-6] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:20:41,995 INFO c.e.d.c.OrderController [http-nio-8080-exec-7] metricClass=GetOrdersOfUserWithUsername metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:20:51,334 DEBUG c.e.d.s.JWTAuthenticationFilter [http-nio-8080-exec-8] Request is to process authentication
+2022-09-02 18:21:02,120 INFO c.e.d.c.CartController [http-nio-8080-exec-9] metricClass=AddItemToCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:21:17,919 INFO c.e.d.c.OrderController [http-nio-8080-exec-10] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Muge
+2022-09-02 18:21:58,948 INFO c.e.d.c.UserController [http-nio-8080-exec-1] metricClass=CreateUser metric=Success inputDataKey=username inputDataValue=Rima
+2022-09-02 18:22:04,571 DEBUG c.e.d.s.JWTAuthenticationFilter [http-nio-8080-exec-3] Request is to process authentication
+2022-09-02 18:22:20,966 INFO c.e.d.c.CartController [http-nio-8080-exec-4] metricClass=AddItemToCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:22:26,069 INFO c.e.d.c.OrderController [http-nio-8080-exec-5] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Rima
+2022-09-02 18:22:37,865 INFO c.e.d.c.CartController [http-nio-8080-exec-6] metricClass=AddItemToCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:22:48,429 INFO c.e.d.c.CartController [http-nio-8080-exec-7] metricClass=RemoveItemFromCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:22:51,817 INFO c.e.d.c.CartController [http-nio-8080-exec-8] metricClass=RemoveItemFromCart metric=Success inputDataKey=itemId inputDataValue=2
+2022-09-02 18:22:57,794 INFO c.e.d.c.OrderController [http-nio-8080-exec-9] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Rima
+2022-09-02 18:23:04,165 INFO c.e.d.c.OrderController [http-nio-8080-exec-10] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Sara
+2022-09-02 18:24:19,875 INFO c.e.d.c.OrderController [http-nio-8080-exec-4] metricClass=SubmitOrder metric=Success inputDataKey=username inputDataValue=Rima
