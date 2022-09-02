@@ -31,7 +31,6 @@ public class ItemControllerTest {
     public void setUp() {
         itemController = new ItemController();
         TestUtils.injectObjects(itemController, "itemRepository", itemRepository);
-//        when(cartRepository.save(any())).thenReturn(createCart());
     }
 
     @Test
